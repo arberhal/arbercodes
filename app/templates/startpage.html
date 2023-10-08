@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>arber.codes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/startpage.css')}}">
+    <script src="{{ url_for('static', filename='js/secretCheck.js') }}"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/itm7boe.css">
+</head>
+<body>
+    <div id="test">
+    <div id="loginDiv">
+    {% if show_content %}
+    {% else %}
+        <form id="loginform" method="post">
+            <input type="password" name="password" id="password" oninput="checkPasswordLength(this)" placeholder="Password">
+        </form>
+    {% endif %}
+    </div>
+</div>
+    <div id="footer">©arber.codes - möchtest du zugriff auf die Webseite kontaktiere mich per mail arberhalitix@gmail.com</div>
+
+</body>
+</html>
