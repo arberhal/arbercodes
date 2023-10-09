@@ -1,10 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Single Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css')}}">
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/itm7boe.css">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Welcome to the Single Page</h1>
-    {# Your single-page content here #}
+    <header>
+        <div id="logoContainer">
+            <img id="logo" src="{{ url_for('static', filename='img/arber.png') }}">
+        </div>
+       <div id="navContainer">
+        <img id="navmenu" src="{{ url_for('static', filename='img/navMenu.svg') }}"> 
+       </div>
+    </header>
+    <div class="contentcontainer" id="home">
+        <div class="bubbles">
+            <span style="--i:7;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:44;"></span>
+            <span style="--i:81;"></span>
+            <span style="--i:59;"></span>
+            <span style="--i:73;"></span>
+            <span style="--i:74;"></span>
+            <span style="--i:93;"></span>
+            <span style="--i:45;"></span>
+            <span style="--i:34;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:44;"></span>
+            <span style="--i:68;"></span>
+            <span style="--i:89;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:68;"></span>
+            <span style="--i:27;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:70;"></span>
+            <span style="--i:37;"></span>
+            <span style="--i:46;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:37;"></span>
+            <span style="--i:39;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:38;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:41;"></span>
+            <span style="--i:30;"></span>
+            <span style="--i:56;"></span>
+            <span style="--i:50;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:28;"></span>
+            <span style="--i:85;"></span>
+            <span style="--i:75;"></span>
+            <span style="--i:45;"></span>
+            <span style="--i:46;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:84;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:78;"></span>
+            <span style="--i:95;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:93;"></span>
+            <span style="--i:95;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:59;"></span>
+            <span style="--i:4;"></span>
+        </div>
+
+        </div>
+    </div>
+    <div class="contentcontainer" id="ubermich">
+        <div class="titlecontainer">
+            <div class="title" id="ubermichtitle"><h2>&lt;/über mich&gt;</h2></div>
+            <div class="text"></div>
+        </div>
+        <div id="ubermichcontent">
+
+        </div>
+    </div>
+    <div class="contentcontainer" id="resume">
+        <div class="titlecontainer">
+            <div class="title" id="resumetitle"><h2>&lt;/résumé&gt;</h2></div>
+            <div class="text"></div>
+        </div>
+        <div id="resumecontent">
+
+        </div>
+    </div>
+    <div class="contentcontainer" id="projekt">
+        <div class="titlecontainer">
+            <div class="title" id="projekttitle"><h2>&lt;/projekte&gt;</h2></div>
+            <div class="text"></div>
+        </div>
+        <div id="projektcontent">
+
+        </div>
+    </div>
+    <div class="contentcontainer" id="contact">
+        <div class="titlecontainer">
+            <div class="title" id="contacttitle"><h2>&lt;/contact&gt;</h2></div>
+            <div class="text"></div>
+        </div>
+        <div id="contactcontent">
+        </div>
+    </div>
+
 </body>
 </html>
